@@ -13,7 +13,10 @@ public class DoorController : MonoBehaviour
     {
         isOpen = !isOpen;
 
+        Debug.Log("TOGGLE FUNCIONA: " + isOpen);
+
         leftAnim.SetBool("isOpen", isOpen);
         rightAnim.SetBool("isOpen", isOpen);
     }
 }
+ 
