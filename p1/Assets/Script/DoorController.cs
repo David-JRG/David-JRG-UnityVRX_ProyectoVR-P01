@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +9,13 @@ public class DoorController : MonoBehaviour
 
     private bool isOpen = false; // Estado de la puerta
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip openSound;
+    public AudioClip closeSound;
+
+  
+
     public void ToggleDoor()
     {
         isOpen = !isOpen;
@@ -17,6 +24,15 @@ public class DoorController : MonoBehaviour
 
         leftAnim.SetBool("isOpen", isOpen);
         rightAnim.SetBool("isOpen", isOpen);
+
+        // 🔊 Sonido
+        if (isOpen)
+        {
+            audioSource.PlayOneShot(openSound);
+        }
+        else
+        {
+            audioSource.PlayOneShot(closeSound);
+        }
     }
 }
- 
