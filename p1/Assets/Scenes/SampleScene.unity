@@ -877,37 +877,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8525429354371678379, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!1 &850357191
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 850357192}
-  m_Layer: 0
-  m_Name: c1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &850357192
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 850357191}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1919779970}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &871569374
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +887,6 @@ GameObject:
   m_Component:
   - component: {fileID: 871569375}
   - component: {fileID: 871569376}
-  - component: {fileID: 871569378}
   - component: {fileID: 871569377}
   - component: {fileID: 871569380}
   m_Layer: 3
@@ -976,7 +944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1502648456}
   m_Colliders:
-  - {fileID: 871569378}
+  - {fileID: 7409833744970866953}
+  - {fileID: 8076588673918365006}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1077,27 +1046,6 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!65 &871569378
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871569374}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.06382775, y: 0.32567215, z: 0.34903312}
-  m_Center: {x: -3.647849, y: 0.84033775, z: -0.07}
 --- !u!82 &871569380
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3120,38 +3068,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cff0fe5400836b45a1803ce966c328d, type: 3}
---- !u!1 &1919779969
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1919779970}
-  m_Layer: 0
-  m_Name: Colisionadores
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1919779970
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919779969}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17384577, y: 5.4894624, z: 185.69357}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 850357192}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9920407321934604
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3205,7 +3121,7 @@ GameObject:
   - component: {fileID: 8566369262068643870}
   - component: {fileID: 8566369262068643871}
   m_Layer: 0
-  m_Name: 5_Dragon C_1.0_0_0
+  m_Name: Cabeza del dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3299,7 +3215,7 @@ GameObject:
   - component: {fileID: 4312005958911507703}
   - component: {fileID: 4312005958911507704}
   m_Layer: 0
-  m_Name: 5_Dragon D_1.0_0_0
+  m_Name: Cola del dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3446,7 +3362,7 @@ GameObject:
   - component: {fileID: 8271515847558109692}
   - component: {fileID: 9202438394941064513}
   m_Layer: 0
-  m_Name: 5_Dragon A_1.0_0_0
+  m_Name: Camino del Dragon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3508,7 +3424,7 @@ GameObject:
   - component: {fileID: 3258229895749425052}
   - component: {fileID: 7414721652529605153}
   m_Layer: 0
-  m_Name: 5_Planet C_1.0_0_0
+  m_Name: Planeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3893,8 +3809,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2068470386327928287}
   - component: {fileID: 4021117564829909258}
+  - component: {fileID: 4021117564829909259}
   m_Layer: 3
-  m_Name: Bone L
+  m_Name: Hoja - Izquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3921,6 +3838,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &4021117564829909259
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4021117564829909257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4163238797592952213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3931,8 +3870,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2242531465778070339}
   - component: {fileID: 4163238797592952214}
+  - component: {fileID: 4163238797592952215}
   m_Layer: 3
-  m_Name: BoneR
+  m_Name: Hoja - Derecha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3959,6 +3899,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &4163238797592952215
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4163238797592952213}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &4312005958911507703
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4035,6 +3997,7 @@ GameObject:
   - component: {fileID: 4712508947435678263}
   - component: {fileID: 7409833744970866951}
   - component: {fileID: 7409833744970866952}
+  - component: {fileID: 7409833744970866953}
   m_Layer: 3
   m_Name: L Door
   m_TagString: Untagged
@@ -4222,7 +4185,7 @@ GameObject:
   - component: {fileID: 3010164152071564639}
   - component: {fileID: 7293259634407432216}
   m_Layer: 0
-  m_Name: walls
+  m_Name: Pared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4255,7 +4218,7 @@ GameObject:
   - component: {fileID: 1008770879109712681}
   - component: {fileID: 6598461843050028917}
   m_Layer: 0
-  m_Name: 5_Cloud_1.0_0_0
+  m_Name: Nuves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4404,7 +4367,7 @@ GameObject:
   - component: {fileID: 3031799279133326998}
   - component: {fileID: 7135318838631321093}
   m_Layer: 0
-  m_Name: 5_Dragon B_1.0_0_0
+  m_Name: Piso rosa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4525,6 +4488,28 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &7409833744970866953
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319048735506054640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2324146758177671502, guid: 73e4fdd1a39968c4389b9bfeea97d526, type: 3}
 --- !u!33 &7414721652529605152
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4698,6 +4683,7 @@ GameObject:
   - component: {fileID: 3415353230332509986}
   - component: {fileID: 2541616110863750875}
   - component: {fileID: 4623980816368220928}
+  - component: {fileID: 8076588673918365006}
   m_Layer: 3
   m_Name: R Door
   m_TagString: Untagged
@@ -4705,6 +4691,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8076588673918365006
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8076588673918365005}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5514745549618087292, guid: 73e4fdd1a39968c4389b9bfeea97d526, type: 3}
 --- !u!4 &8080383283729508682
 Transform:
   m_ObjectHideFlags: 0
@@ -4900,7 +4908,7 @@ GameObject:
   - component: {fileID: 4953377252104255788}
   - component: {fileID: 9141013272239720193}
   m_Layer: 0
-  m_Name: Windows
+  m_Name: Ventanas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4975,4 +4983,3 @@ SceneRoots:
   - {fileID: 572212682}
   - {fileID: 644846042}
   - {fileID: 543450653013067363}
-  - {fileID: 1919779970}
