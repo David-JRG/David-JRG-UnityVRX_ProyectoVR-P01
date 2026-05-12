@@ -4,28 +4,34 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public Animator leftAnim;   // Animator de la hoja izquierda
-    public Animator rightAnim;  // Animator de la hoja derecha
+    public Animator leftAnim;
+    public Animator rightAnim;
 
-    private bool isOpen = false; // Estado de la puerta
+    private bool isOpen = false;
 
     [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip openSound;
     public AudioClip closeSound;
-
-  
+    public AudioClip lockedSound;
 
     public void ToggleDoor()
     {
-        isOpen = !isOpen;
+        if (!GameManager.instance.hasKey)
+        {
+            UIManager.instance.ShowText(
+                "La puerta está sellada."
+            );
+            audioSource.PlayOneShot(lockedSound);
 
-        Debug.Log("TOGGLE FUNCIONA: " + isOpen);
+            return;
+        }
+
+        isOpen = !isOpen;
 
         leftAnim.SetBool("isOpen", isOpen);
         rightAnim.SetBool("isOpen", isOpen);
 
-        // 🔊 Sonido
         if (isOpen)
         {
             audioSource.PlayOneShot(openSound);
